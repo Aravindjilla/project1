@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            background-color: burlywood;
+            color:goldenrod;
+            font-size:25px;
+            display:none;
+        }
+        @media (max-width:250px){
+             #item1{
+                display: block;
+                background-color: coral;
+             }
+        }
+        
+        @media (min-width:251px) and (max-width:600px){
+             #item2{
+                display: block;
+                background-color: rgb(67, 182, 22);
+             }
+        }
+        @media (min-width:601px) and (max-width:900px){
+             #item3{
+                display: block;
+                background-color: rgb(70, 4, 64);
+             }
+        }
+        @media (min-width:901px){
+             #item4{
+                display: block;
+                background-color: rgb(8, 7, 59);
+             }
+        }
+    </style>
+
+    <div class="container" id="item1">This is a screen size for mobile starts from 0 to 250px</div>
+    <div class="container" id="item2">This is a screen size for tablet starts from 251 to 600px</div>
+    <div class="container" id="item3">This is a screen size for laptop starts from 601 to 900px</div>
+    <div class="container" id="item4">This is a screen size for Tv starts from 901px to 1200px</div>
+</body>
+</html>
